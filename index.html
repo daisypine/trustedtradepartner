@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexus Trusted Trade Partners | Verified Home Service Professionals in the Bay Area</title>
+<meta name="description" content="Find verified, trusted home service professionals in the Bay Area. Roofing, cleaning, windows, maintenance and more — all vetted through Nexus Networking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --sage: #B8CC3C;
+  --sage-deep: #8FA52E;
+  --sage-light: #F2F6E0;
+  --sage-bg: #F8FAF0;
+  --coral: #E8626C;
+  --coral-dark: #D14D57;
+  --coral-light: #FDF0F0;
+  --charcoal: #1A1A1A;
+  --dark: #222222;
+  --off-white: #FCFCFA;
+  --warm-white: #F7F6F2;
+  --text-primary: #1A1A1A;
+  --text-secondary: #5E5E5E;
+  --text-muted: #999999;
+  --border: #E8E6E1;
+  --border-light: #F0EEEA;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--text-primary);background:var(--off-white);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+
+/* ─── NAV ─── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(26,26,26,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.05)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:12px}
+.nav-logo-mark{width:38px;height:38px;background:var(--sage);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-size:20px;font-weight:700;color:var(--charcoal)}
+.nav-wordmark{font-family:var(--font-heading);color:white;font-size:18px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{color:rgba(255,255,255,0.55);font-size:14px;font-weight:400;transition:color 0.2s}
+.nav-links a:hover{color:white}
+.nav-cta{background:var(--coral);color:white!important;padding:10px 24px;border-radius:100px;font-weight:500;transition:all 0.2s;font-size:14px}
+.nav-cta:hover{background:var(--coral-dark);transform:translateY(-1px)}
+
+/* ─── HERO ─── */
+.hero{padding:160px 24px 100px;background:var(--charcoal);position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to top,var(--off-white),transparent);z-index:2}
+.hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:3;text-align:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(184,204,60,0.12);border:1px solid rgba(184,204,60,0.2);padding:8px 20px;border-radius:100px;margin-bottom:32px}
+.hero-badge .pulse{width:8px;height:8px;border-radius:50%;background:var(--sage);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero-badge span{font-size:12px;font-weight:500;color:var(--sage);letter-spacing:1.5px;text-transform:uppercase}
+.hero h1{font-family:var(--font-heading);color:white;font-size:clamp(42px,6.5vw,80px);font-weight:700;line-height:1.05;text-transform:uppercase;letter-spacing:1px;margin-bottom:24px}
+.hero h1 .accent{color:var(--sage)}
+.hero-sub{color:rgba(255,255,255,0.5);font-size:17px;line-height:1.7;max-width:620px;margin:0 auto 40px;font-weight:300}
+.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-sage{background:var(--sage);color:var(--charcoal);padding:14px 36px;border-radius:100px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;font-family:var(--font-body)}
+.btn-sage:hover{background:var(--sage-deep);transform:translateY(-1px)}
+.btn-coral{background:var(--coral);color:white;padding:14px 36px;border-radius:100px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;font-family:var(--font-body)}
+.btn-coral:hover{background:var(--coral-dark);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:white;padding:14px 36px;border-radius:100px;font-size:15px;font-weight:500;border:1px solid rgba(255,255,255,0.15);cursor:pointer;transition:all 0.2s;font-family:var(--font-body)}
+.btn-outline:hover{border-color:rgba(255,255,255,0.35);background:rgba(255,255,255,0.04)}
+
+/* ─── STATS BAR ─── */
+.stats-bar{position:relative;z-index:4;max-width:900px;margin:-48px auto 0;background:white;border-radius:16px;border:1px solid var(--border);display:grid;grid-template-columns:repeat(3,1fr);overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.06)}
+.stat-item{padding:28px 24px;text-align:center;position:relative}
+.stat-item:not(:last-child)::after{content:'';position:absolute;right:0;top:20%;height:60%;width:1px;background:var(--border)}
+.stat-number{font-family:var(--font-heading);font-size:36px;font-weight:700;color:var(--charcoal);letter-spacing:-0.5px}
+.stat-number .green{color:var(--sage-deep)}
+.stat-label{font-size:13px;color:var(--text-muted);margin-top:4px;font-weight:400}
+
+/* ─── SECTIONS ─── */
+.section{padding:80px 24px}
+.section-inner{max-width:1200px;margin:0 auto}
+.section-tag{font-family:var(--font-heading);font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--sage-deep);margin-bottom:8px}
+.section-title{font-family:var(--font-heading);font-size:clamp(28px,4vw,42px);font-weight:700;text-transform:uppercase;line-height:1.1;margin-bottom:12px;letter-spacing:0.5px}
+.section-title .accent{color:var(--sage-deep)}
+.section-sub{color:var(--text-secondary);font-size:16px;max-width:560px;margin-bottom:48px;font-weight:300;line-height:1.7}
+.section-center{text-align:center}
+.section-center .section-sub{margin-left:auto;margin-right:auto}
+
+/* ─── HOW IT WORKS ─── */
+.how-section{background:var(--warm-white)}
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step{background:white;border:1px solid var(--border);border-radius:var(--radius);padding:28px 22px;position:relative;transition:all 0.3s}
+.step:hover{border-color:var(--sage);transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,0.05)}
+.step-num{font-family:var(--font-heading);width:36px;height:36px;border-radius:50%;background:var(--sage);color:var(--charcoal);font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.step h3{font-family:var(--font-heading);font-size:17px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px}
+.step p{font-size:14px;color:var(--text-secondary);line-height:1.6;font-weight:300}
+
+/* ─── PARTNERS ─── */
+.partners-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.partner-card{background:white;border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;align-items:flex-start;gap:16px;transition:all 0.3s}
+.partner-card:hover{border-color:var(--sage);box-shadow:0 4px 20px rgba(0,0,0,0.04)}
+.partner-logo{width:56px;height:56px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-heading);font-size:18px;font-weight:700;color:white;background:var(--charcoal)}
+.partner-logo.sage{background:var(--sage-deep)}
+.partner-logo.coral{background:var(--coral)}
+.partner-logo.dark{background:#3A3A3A}
+.partner-logo.muted{background:#6B7B5A}
+.partner-logo.slate{background:#4A5568}
+.partner-name{font-family:var(--font-heading);font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:0.3px;margin-bottom:3px}
+.partner-service{font-size:13px;color:var(--text-secondary);margin-bottom:10px;font-weight:300;line-height:1.5}
+.partner-verified{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--sage-deep);background:var(--sage-light);padding:4px 12px;border-radius:100px;font-weight:500}
+.partner-verified svg{width:11px;height:11px}
+.partner-card.cta-card{border-style:dashed;border-color:var(--sage);background:var(--sage-bg)}
+.partner-card.cta-card .partner-logo{background:var(--sage-light);color:var(--sage-deep)}
+
+/* ─── BENEFITS ─── */
+.benefits-section{background:var(--warm-white)}
+.benefits-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.benefit{background:white;border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:all 0.3s}
+.benefit:hover{border-color:var(--sage)}
+.benefit-icon{width:44px;height:44px;border-radius:10px;background:var(--sage-light);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.benefit-icon svg{width:22px;height:22px;stroke:var(--sage-deep);fill:none;stroke-width:1.8}
+.benefit h3{font-family:var(--font-heading);font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:0.3px;margin-bottom:6px}
+.benefit p{font-size:14px;color:var(--text-secondary);line-height:1.6;font-weight:300}
+
+/* ─── REFERRAL ─── */
+.referral{background:var(--charcoal);position:relative;overflow:hidden}
+.referral::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;border-radius:50%;background:rgba(184,204,60,0.04)}
+.referral::after{content:'';position:absolute;bottom:-80px;left:-80px;width:300px;height:300px;border-radius:50%;background:rgba(232,98,108,0.04)}
+.referral-inner{max-width:800px;margin:0 auto;text-align:center;position:relative;z-index:2}
+.referral .section-tag{color:var(--coral)}
+.referral .section-title{color:white}
+.referral .section-title .accent{color:var(--sage)}
+.referral-sub{color:rgba(255,255,255,0.45);font-size:16px;margin-bottom:40px;max-width:560px;margin-left:auto;margin-right:auto;font-weight:300}
+.ref-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:40px}
+.ref-step{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);padding:28px 18px;text-align:center}
+.ref-num{font-family:var(--font-heading);width:32px;height:32px;border-radius:50%;background:var(--sage);color:var(--charcoal);font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.ref-step h4{font-family:var(--font-heading);color:white;font-size:15px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px}
+.ref-step p{color:rgba(255,255,255,0.4);font-size:13px;line-height:1.6;font-weight:300}
+
+/* ─── FORM ─── */
+.form-section{background:var(--off-white)}
+.form-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.form-info h3{font-family:var(--font-heading);font-size:32px;font-weight:700;text-transform:uppercase;line-height:1.15;margin-bottom:16px}
+.form-info h3 .accent{color:var(--sage-deep)}
+.form-info p{color:var(--text-secondary);font-size:15px;line-height:1.7;margin-bottom:28px;font-weight:300}
+.form-checklist{list-style:none;display:flex;flex-direction:column;gap:14px}
+.form-checklist li{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--text-secondary);line-height:1.5;font-weight:400}
+.check-icon{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;margin-top:1px}
+.check-icon svg{width:12px;height:12px;stroke:var(--charcoal);fill:none;stroke-width:3}
+.form-card{background:white;border:1px solid var(--border);border-radius:16px;padding:36px;box-shadow:0 2px 16px rgba(0,0,0,0.03)}
+.form-card h3{font-family:var(--font-heading);font-size:20px;font-weight:600;text-transform:uppercase;letter-spacing:0.3px;margin-bottom:4px}
+.form-card .form-sub{font-size:13px;color:var(--text-muted);margin-bottom:28px;font-weight:300}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+.form-group{display:flex;flex-direction:column;gap:5px}
+.form-group.full{grid-column:1/-1}
+.form-label{font-size:13px;font-weight:500;color:var(--text-primary)}
+.form-input{padding:11px 16px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:14px;font-family:var(--font-body);color:var(--text-primary);background:var(--warm-white);transition:all 0.2s;outline:none;font-weight:400}
+.form-input:focus{border-color:var(--sage);background:white;box-shadow:0 0 0 3px rgba(184,204,60,0.1)}
+.form-input::placeholder{color:var(--text-muted);font-weight:300}
+textarea.form-input{min-height:80px;resize:vertical}
+select.form-input{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
+.form-submit{width:100%;padding:14px;background:var(--coral);color:white;border:none;border-radius:100px;font-size:15px;font-weight:600;cursor:pointer;transition:all 0.2s;margin-top:10px;font-family:var(--font-body)}
+.form-submit:hover{background:var(--coral-dark);transform:translateY(-1px)}
+
+/* ─── FOOTER ─── */
+.footer{background:var(--charcoal);padding:48px 24px;text-align:center}
+.footer-brand{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px}
+.footer-brand .nav-logo-mark{width:32px;height:32px;font-size:16px}
+.footer-brand span{font-family:var(--font-heading);color:white;font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.footer p{color:rgba(255,255,255,0.3);font-size:13px;margin-bottom:4px;font-weight:300}
+.footer a{color:rgba(255,255,255,0.5);transition:color 0.2s}
+.footer a:hover{color:var(--sage)}
+.footer-links{display:flex;justify-content:center;gap:24px;margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.06)}
+.footer-links a{color:rgba(255,255,255,0.4);font-size:13px;font-weight:400}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:900px){
+  .steps-grid{grid-template-columns:1fr 1fr}
+  .benefits-grid{grid-template-columns:1fr}
+  .form-wrap{grid-template-columns:1fr}
+  .ref-steps{grid-template-columns:1fr}
+  .stats-bar{grid-template-columns:1fr;margin-top:-36px}
+  .stat-item:not(:last-child)::after{display:none;width:0;height:0}
+  .stat-item:not(:last-child){border-bottom:1px solid var(--border)}
+  .nav-links .hide-m{display:none}
+}
+@media(max-width:600px){
+  .steps-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .nav-links{gap:16px}
+  .hero h1{font-size:38px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <div class="nav-logo-mark">N</div>
+      <div class="nav-wordmark">Nexus Networking</div>
+    </a>
+    <div class="nav-links">
+      <a href="#partners" class="hide-m">Partners</a>
+      <a href="#how-it-works" class="hide-m">How It Works</a>
+      <a href="#refer" class="hide-m">Referrals</a>
+      <a href="#join" class="nav-cta">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <div class="pulse"></div>
+      <span>Now Accepting Partners</span>
+    </div>
+    <h1>Your <span class="accent">Trusted</span><br>Trade Partners</h1>
+    <p class="hero-sub">Nexus Networking connects Bay Area homeowners with verified, vetted home service professionals — from roofing to cleaning to windows and beyond. Every partner is personally vouched for.</p>
+    <div class="hero-actions">
+      <a href="#join" class="btn-sage">Become a Partner →</a>
+      <a href="#partners" class="btn-outline">View Our Partners</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-number"><span class="green">350</span>+</div>
+    <div class="stat-label">Homeowner contacts in the network</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number"><span class="green">5</span></div>
+    <div class="stat-label">Verified pilot partners</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number"><span class="green">100</span>%</div>
+    <div class="stat-label">Vetted & verified businesses</div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="section how-section" id="how-it-works">
+  <div class="section-inner">
+    <div class="section-tag">How It Works</div>
+    <h2 class="section-title">One Network. <span class="accent">Endless Referrals.</span></h2>
+    <p class="section-sub">We pool trusted trade partners together so every client list becomes a shared lead engine — and every homeowner gets access to vetted pros.</p>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Partner Intake</h3>
+        <p>We verify your business, review your online presence, and ensure you meet our quality standards before listing you as a trusted partner.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>List Pooling</h3>
+        <p>Participating partners contribute their past client lists. We digitize and organize contacts for coordinated outreach across email, phone, and door hangers.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Cross-Promotion</h3>
+        <p>Campaigns go out under each partner's brand with a curated section featuring all trusted trade partners — so homeowners see pros they already know recommending others.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Track & Grow</h3>
+        <p>Every referral is tracked with unique codes. Monthly reports show leads generated, and the network grows as results compound.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="section" id="partners">
+  <div class="section-inner">
+    <div class="section-tag">Our Partners</div>
+    <h2 class="section-title">Trusted by the Trades. <span class="accent">Vetted by Nexus.</span></h2>
+    <p class="section-sub">Each partner has been verified for quality, professionalism, and reliability. These are the pros we personally vouch for.</p>
+    <div class="partners-grid">
+      <div class="partner-card">
+        <div class="partner-logo dark">FR</div>
+        <div>
+          <div class="partner-name">Falcon Roofing</div>
+          <div class="partner-service">Roofing, gutters, inspections & solar panel cleaning</div>
+          <div class="partner-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Verified Partner</div>
+        </div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo sage">HP</div>
+        <div>
+          <div class="partner-name">Home Pros</div>
+          <div class="partner-service">Carpet cleaning & house cleaning services</div>
+          <div class="partner-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Verified Partner</div>
+        </div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo muted">MP</div>
+        <div>
+          <div class="partner-name">Maintenance Pro</div>
+          <div class="partner-service">General home maintenance & repairs</div>
+          <div class="partner-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Verified Partner</div>
+        </div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo slate">KV</div>
+        <div>
+          <div class="partner-name">KVD</div>
+          <div class="partner-service">Home services</div>
+          <div class="partner-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Verified Partner</div>
+        </div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo coral">JW</div>
+        <div>
+          <div class="partner-name">Johnny Windows</div>
+          <div class="partner-service">Window cleaning & window services</div>
+          <div class="partner-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Verified Partner</div>
+        </div>
+      </div>
+      <div class="partner-card cta-card">
+        <div class="partner-logo" style="font-size:24px">+</div>
+        <div>
+          <div class="partner-name" style="color:var(--sage-deep)">Your Business Here</div>
+          <div class="partner-service">We're accepting new trade partners for the Bay Area — landscaping, pool service, painting, home insurance and more.</div>
+          <a href="#join" style="font-size:13px;color:var(--sage-deep);font-weight:600;text-decoration:underline;text-underline-offset:3px">Apply to join →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section benefits-section" id="benefits">
+  <div class="section-inner">
+    <div class="section-tag">For Trade Partners</div>
+    <h2 class="section-title">Why <span class="accent">Join</span> the Network?</h2>
+    <p class="section-sub">Stop marketing alone. Get leads from businesses that already have trust with your ideal customers.</p>
+    <div class="benefits-grid">
+      <div class="benefit">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Cross-Referral Leads</h3>
+        <p>Get introduced to hundreds of past clients from other trusted trades — homeowners who already trust a business like yours.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Directory Listing</h3>
+        <p>Featured on our Nexus Trusted Partners page with your logo, services, and direct contact link — building SEO and credibility over time.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3>Done-For-You Marketing</h3>
+        <p>Email campaigns, door hangers, and phone outreach — all designed, written, and managed for you. You just answer the phone.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Lead Tracking & Reporting</h3>
+        <p>Unique referral codes for every partner. Monthly reports show exactly how many leads came through the network so you see real ROI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERRAL -->
+<section class="section referral" id="refer">
+  <div class="referral-inner">
+    <div class="section-tag">Homeowner Referral Program</div>
+    <h2 class="section-title">Refer a Friend. <span class="accent">Get Rewarded.</span></h2>
+    <p class="referral-sub">Know someone who needs home services? Refer them to any of our trusted partners and earn 10% off your next service — plus a finder's fee for qualifying jobs.</p>
+    <div class="ref-steps">
+      <div class="ref-step">
+        <div class="ref-num">1</div>
+        <h4>Share Our Info</h4>
+        <p>Tell a friend, neighbor, or family member about any of our trusted partners.</p>
+      </div>
+      <div class="ref-step">
+        <div class="ref-num">2</div>
+        <h4>They Mention You</h4>
+        <p>When they call, they mention your name or use the referral code NEXUS.</p>
+      </div>
+      <div class="ref-step">
+        <div class="ref-num">3</div>
+        <h4>You Get Rewarded</h4>
+        <p>10% off your next service plus a finder's fee on qualifying jobs. Simple as that.</p>
+      </div>
+    </div>
+    <a href="#join" class="btn-coral">Refer Someone Now →</a>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="section form-section" id="join">
+  <div class="section-inner">
+    <div class="form-wrap">
+      <div class="form-info">
+        <div class="section-tag">Get Started</div>
+        <h3>Apply to Become a <span class="accent">Trusted Trade Partner</span></h3>
+        <p>Join the Bay Area's growing network of verified home service professionals. Early partners get founding-member rates — pricing increases as the network scales.</p>
+        <ul class="form-checklist">
+          <li><div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Inclusion in all cross-referral email campaigns</li>
+          <li><div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Featured listing on the Nexus Trusted Partners directory</li>
+          <li><div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Door hanger placement distributed to past client addresses</li>
+          <li><div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Unique referral tracking code and monthly lead reports</li>
+          <li><div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Visibility at Nexus Networking events</li>
+          <li><div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Marketing support from Kaizen Agency</li>
+        </ul>
+      </div>
+      <div class="form-card">
+        <h3>Partner Inquiry</h3>
+        <p class="form-sub">Fill out the form and we'll reach out to schedule your intake call.</p>
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">First name</label>
+              <input type="text" class="form-input" placeholder="Your first name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Last name</label>
+              <input type="text" class="form-input" placeholder="Your last name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label class="form-label">Business name</label>
+              <input type="text" class="form-input" placeholder="Your company name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-input" placeholder="you@company.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-input" placeholder="(___) ___-____" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label class="form-label">Service category</label>
+              <select class="form-input" required>
+                <option value="" disabled selected>Select your trade</option>
+                <option>Roofing</option>
+                <option>Cleaning (carpet, house, pressure washing)</option>
+                <option>Windows</option>
+                <option>General maintenance & handyman</option>
+                <option>Painting</option>
+                <option>Landscaping</option>
+                <option>Pool service</option>
+                <option>Flooring</option>
+                <option>Plumbing</option>
+                <option>Electrical</option>
+                <option>HVAC</option>
+                <option>Home insurance</option>
+                <option>Property management</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label class="form-label">Do you have a website?</label>
+              <input type="url" class="form-input" placeholder="https://yourcompany.com">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label class="form-label">Anything else we should know?</label>
+              <textarea class="form-input" placeholder="Tell us about your business, service area, or any questions..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="form-submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">
+    <div class="nav-logo-mark">N</div>
+    <span>Nexus Networking</span>
+  </div>
+  <p>Trusted Trade Partner Marketing Program</p>
+  <p style="margin-top:4px">Strategy & marketing by <a href="https://growthwithkaizen.com" target="_blank" rel="noopener">Kaizen Agency</a></p>
+  <div class="footer-links">
+    <a href="#">Home</a>
+    <a href="#partners">Partners</a>
+    <a href="#refer">Referrals</a>
+    <a href="#join">Apply</a>
+  </div>
+  <p style="margin-top:20px;font-size:12px">&copy; 2026 Nexus Networking. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
